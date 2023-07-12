@@ -1,5 +1,10 @@
 Dependências:
 
+Padronização (boa pratica):
+Camadas -> a camada serviço retorna pro controller, o DTO e não a entidade, por isso uma classe GameDTO contendo os mesmo atributos da entidade original Game
+evitando representação cíclica de objetos 
+
+Service -> todo método do service colocar anotação para que fique transacional, garante que a operação com o BD vai acontecer, obedecendo os principios das transações ACID
 
 APRENDIZADO:
 API rest
