@@ -1,6 +1,7 @@
 package br.com.devsuperior.dslist.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,5 +26,13 @@ public class GameService {
 		return dto;
 
 	}
+	
+//	public Optional<GameMinDTO> findById(Long id){
+//		
+//		Optional<Game> resultado = gameRepository.findById(id);
+//		
+//		Optional<GameMinDTO> dto = resultado
+//		
+//	}
 
 }

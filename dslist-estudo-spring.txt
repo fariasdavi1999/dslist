@@ -1,0 +1,10 @@
+MODELO DE DOMINIO
+belonging é a terceira tabela do relacionamento de muitos pra muitos entre game e gamelist
+a chave primaria aqui nessa tabela belonging é integrada, uma outra classe (objeto)
+
+belonginpk é pra referenciar os dois ids que precisam ter na tabela belonging
+a anotação embeddable serve pra encapsular dois atributos em uma classe para formar a chaves primarias das classes principais, que sao as estrangeiras da tabela
+
+
+
+ 
