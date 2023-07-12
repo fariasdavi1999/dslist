@@ -1,5 +1,6 @@
 Dependências:
 
+
 Padronização (boa pratica):
 Camadas -> a camada serviço retorna pro controller, o DTO e não a entidade, por isso uma classe GameDTO contendo os mesmo atributos da entidade original Game
 evitando representação cíclica de objetos 
@@ -33,8 +34,8 @@ belonginpk é pra referenciar os dois ids que precisam ter na tabela belonging
 a anotação embeddable serve pra encapsular dois atributos em uma classe para formar a chaves primarias das classes principais, que sao as estrangeiras da tabela
 
 OBSERVAÇÕES: 
+ao invés de import.sql, estou usando nesse projeto flyway para aprimorar habilidades
+
 quando se usa 'nativequery' no repository, ou seja, sql e não JP/QL (jpa), o resultado da consulta tem que ser uma interface, no spring se chama 'projection'
-
-
 
  
