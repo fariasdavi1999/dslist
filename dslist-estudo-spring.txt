@@ -1,3 +1,20 @@
+Dependências:
+
+
+APRENDIZADO:
+API rest
+java, springboot
+ORM, JPA
+Camadas, DTO (Data transfer object)
+
+Modelo de dominio
+Consulta sql
+Projetions
+Embedded id
+
+ORM
+mapeamento de objeto relacional
+
 MODELO DE DOMINIO
 belonging é a terceira tabela do relacionamento de muitos pra muitos entre game e gamelist
 a chave primaria aqui nessa tabela belonging é integrada, uma outra classe (objeto)
