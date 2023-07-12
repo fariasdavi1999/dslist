@@ -17,6 +17,11 @@ Consulta sql
 Projetions
 Embedded id
 
+Relacionamento n-n
+Classe de associação, embedded id (BelongingPK)
+Consultas SQL no Spring Data JPA (SQL(nativeQuery e não JP/QL (JPA)))
+Projections (pra questão de uso de NativeQuery)
+
 ORM
 mapeamento de objeto relacional
 
@@ -26,6 +31,9 @@ a chave primaria aqui nessa tabela belonging é integrada, uma outra classe (obj
 
 belonginpk é pra referenciar os dois ids que precisam ter na tabela belonging
 a anotação embeddable serve pra encapsular dois atributos em uma classe para formar a chaves primarias das classes principais, que sao as estrangeiras da tabela
+
+OBSERVAÇÕES: 
+quando se usa 'nativequery' no repository, ou seja, sql e não JP/QL (jpa), o resultado da consulta tem que ser uma interface, no spring se chama 'projection'
 
 
 
