@@ -8,6 +8,7 @@ evitando representação cíclica de objetos
 Service -> todo método do service colocar anotação para que fique transacional, garante que a operação com o BD vai acontecer, obedecendo os principios das transações ACID
 
 APRENDIZADO:
+
 API rest
 java, springboot
 ORM, JPA
@@ -23,14 +24,13 @@ Classe de associação, embedded id (BelongingPK)
 Consultas SQL no Spring Data JPA (SQL(nativeQuery e não JP/QL (JPA)))
 Projections (pra questão de uso de NativeQuery)
 
-ORM
-mapeamento de objeto relacional
+O QUE É:
+ORM -> mapeamento de objeto relacional
 
-MODELO DE DOMINIO
-belonging é a terceira tabela do relacionamento de muitos pra muitos entre game e gamelist
-a chave primaria aqui nessa tabela belonging é integrada, uma outra classe (objeto)
+MODELO DE DOMINIO -> belonging é a terceira tabela do relacionamento, de muitos pra muitos entre game e gamelist,
+a chave primaria aqui nessa tabela belonging é integrada (embedded id), de uma outra classe (objeto(BelongingPK))
 
-belonginpk é pra referenciar os dois ids que precisam ter na tabela belonging
+belongingPK é pra referenciar os dois ids que precisam ter na tabela belonging
 a anotação embeddable serve pra encapsular dois atributos em uma classe para formar a chaves primarias das classes principais, que sao as estrangeiras da tabela
 
 OBSERVAÇÕES: 
@@ -38,4 +38,7 @@ ao invés de import.sql, estou usando nesse projeto flyway para aprimorar habili
 
 quando se usa 'nativequery' no repository, ou seja, sql e não JP/QL (jpa), o resultado da consulta tem que ser uma interface, no spring se chama 'projection'
 
+uso de lombok em algumas entities pra aprimorar habilidades (opcional)
+
+adicionar arquivo no projeto principal, system.properties, pra quando fazer deploy em nuvem na plataforma
  
