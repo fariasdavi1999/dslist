@@ -24,6 +24,8 @@ Classe de associação, embedded id (BelongingPK)
 Consultas SQL no Spring Data JPA (SQL(nativeQuery e não JP/QL (JPA)))
 Projections (pra questão de uso de NativeQuery)
 
+
+
 O QUE É:
 ORM -> mapeamento de objeto relacional
 
@@ -36,7 +38,7 @@ a anotação embeddable serve pra encapsular dois atributos em uma classe para f
 OBSERVAÇÕES: 
 ao invés de import.sql, estou usando nesse projeto flyway para aprimorar habilidades
 
-quando se usa 'nativequery' no repository, ou seja, sql e não JP/QL (jpa), o resultado da consulta tem que ser uma interface, no spring se chama 'projection'
+quando se usa 'nativequery' no repository, ou seja, SQL e não JPQL (jpa), o resultado da consulta tem que ser uma interface, no spring se chama 'projection'
 
 uso de lombok em algumas entities pra aprimorar habilidades (opcional)
 
